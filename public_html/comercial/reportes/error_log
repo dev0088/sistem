@@ -1,0 +1,185 @@
+[21-Apr-2018 23:17:56 UTC] PHP Warning:  mcrypt_encrypt(): Key of size 27 not supported by this algorithm. Only keys of sizes 16, 24 or 32 supported in /home/proyectoila/public_html/inc-2/encrypt.php on line 25
+[21-Apr-2018 23:17:57 UTC] PHP Parse error:  syntax error, unexpected 'Detalle' (T_STRING), expecting ']' in /home/proyectoila/public_html/comercial/reportes/detalle.php on line 15
+[21-Apr-2018 23:26:38 UTC] PHP Warning:  mcrypt_encrypt(): Key of size 27 not supported by this algorithm. Only keys of sizes 16, 24 or 32 supported in /home/proyectoila/public_html/inc-2/encrypt.php on line 25
+[21-Apr-2018 23:26:38 UTC] PHP Parse error:  syntax error, unexpected 'Detalle' (T_STRING), expecting ']' in /home/proyectoila/public_html/comercial/reportes/detalle.php on line 15
+[21-Apr-2018 23:26:49 UTC] PHP Warning:  mcrypt_encrypt(): Key of size 27 not supported by this algorithm. Only keys of sizes 16, 24 or 32 supported in /home/proyectoila/public_html/inc-2/encrypt.php on line 25
+[21-Apr-2018 23:26:49 UTC] PHP Parse error:  syntax error, unexpected 'Detalle' (T_STRING), expecting ']' in /home/proyectoila/public_html/comercial/reportes/detalle.php on line 15
+[21-Apr-2018 23:32:36 UTC] PHP Warning:  mcrypt_encrypt(): Key of size 27 not supported by this algorithm. Only keys of sizes 16, 24 or 32 supported in /home/proyectoila/public_html/inc-2/encrypt.php on line 25
+[21-Apr-2018 23:32:36 UTC] PHP Parse error:  syntax error, unexpected 'Detalle' (T_STRING), expecting ']' in /home/proyectoila/public_html/comercial/reportes/detalle.php on line 15
+[21-Apr-2018 23:34:53 UTC] PHP Warning:  mcrypt_encrypt(): Key of size 27 not supported by this algorithm. Only keys of sizes 16, 24 or 32 supported in /home/proyectoila/public_html/inc-2/encrypt.php on line 25
+[21-Apr-2018 23:34:54 UTC] PHP Parse error:  syntax error, unexpected 'Detalle' (T_STRING), expecting ']' in /home/proyectoila/public_html/comercial/reportes/detalle.php on line 15
+[22-Apr-2018 00:37:35 UTC] PHP Warning:  mcrypt_encrypt(): Key of size 27 not supported by this algorithm. Only keys of sizes 16, 24 or 32 supported in /home/proyectoila/public_html/inc-2/encrypt.php on line 25
+[22-Apr-2018 00:37:35 UTC] PHP Parse error:  syntax error, unexpected 'Detalle' (T_STRING), expecting ']' in /home/proyectoila/public_html/comercial/reportes/detalle.php on line 15
+[22-Apr-2018 23:44:12 UTC] PHP Warning:  mcrypt_encrypt(): Key of size 27 not supported by this algorithm. Only keys of sizes 16, 24 or 32 supported in /home/proyectoila/public_html/inc-2/encrypt.php on line 25
+[22-Apr-2018 23:44:13 UTC] PHP Parse error:  syntax error, unexpected 'Detalle' (T_STRING), expecting ']' in /home/proyectoila/public_html/comercial/reportes/detalle.php on line 15
+[23-Apr-2018 00:28:37 UTC] PHP Parse error:  syntax error, unexpected 'nombre' (T_STRING), expecting ']' in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 115
+[23-Apr-2018 00:29:26 UTC] PHP Parse error:  syntax error, unexpected 'nombre' (T_STRING), expecting ']' in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 115
+[23-Apr-2018 13:04:35 UTC] PHP Warning:  include(../../reportes/pipeline/process-index.php): failed to open stream: No such file or directory in /home/proyectoila/public_html/comercial/reportes/index.php on line 32
+[23-Apr-2018 13:04:35 UTC] PHP Warning:  include(../../reportes/pipeline/process-index.php): failed to open stream: No such file or directory in /home/proyectoila/public_html/comercial/reportes/index.php on line 32
+[23-Apr-2018 13:04:35 UTC] PHP Warning:  include(): Failed opening '../../reportes/pipeline/process-index.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/proyectoila/public_html/comercial/reportes/index.php on line 32
+[23-Apr-2018 13:04:35 UTC] PHP Fatal error:  Call to a member function render() on null in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 497
+[23-Apr-2018 13:17:09 UTC] PHP Warning:  include(../../reportes/pipeline/process-index.php): failed to open stream: No such file or directory in /home/proyectoila/public_html/comercial/reportes/index.php on line 32
+[23-Apr-2018 13:17:09 UTC] PHP Warning:  include(../../reportes/pipeline/process-index.php): failed to open stream: No such file or directory in /home/proyectoila/public_html/comercial/reportes/index.php on line 32
+[23-Apr-2018 13:17:09 UTC] PHP Warning:  include(): Failed opening '../../reportes/pipeline/process-index.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/proyectoila/public_html/comercial/reportes/index.php on line 32
+[23-Apr-2018 13:17:09 UTC] PHP Fatal error:  Call to a member function render() on null in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 497
+[23-Apr-2018 13:17:31 UTC] PHP Warning:  include(../../reportes/pipeline/process-index.php): failed to open stream: No such file or directory in /home/proyectoila/public_html/comercial/reportes/index.php on line 32
+[23-Apr-2018 13:17:31 UTC] PHP Warning:  include(../../reportes/pipeline/process-index.php): failed to open stream: No such file or directory in /home/proyectoila/public_html/comercial/reportes/index.php on line 32
+[23-Apr-2018 13:17:31 UTC] PHP Warning:  include(): Failed opening '../../reportes/pipeline/process-index.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/proyectoila/public_html/comercial/reportes/index.php on line 32
+[23-Apr-2018 13:17:31 UTC] PHP Fatal error:  Call to a member function render() on null in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 497
+[23-Apr-2018 13:59:42 UTC] PHP Warning:  mcrypt_encrypt(): Key of size 27 not supported by this algorithm. Only keys of sizes 16, 24 or 32 supported in /home/proyectoila/public_html/inc-2/encrypt.php on line 25
+[23-Apr-2018 13:59:42 UTC] PHP Parse error:  syntax error, unexpected 'Detalle' (T_STRING), expecting ']' in /home/proyectoila/public_html/comercial/reportes/detalle.php on line 15
+[23-Apr-2018 19:36:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[23-Apr-2018 19:36:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[23-Apr-2018 19:40:53 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[23-Apr-2018 19:40:53 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[23-Apr-2018 19:45:31 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[23-Apr-2018 19:45:31 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[23-Apr-2018 19:47:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[23-Apr-2018 19:47:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[23-Apr-2018 19:48:21 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[23-Apr-2018 19:48:21 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[23-Apr-2018 20:33:04 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[23-Apr-2018 20:33:04 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[23-Apr-2018 20:59:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[23-Apr-2018 20:59:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[23-Apr-2018 21:14:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[23-Apr-2018 21:14:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[23-Apr-2018 21:14:13 UTC] PHP Warning:  mcrypt_encrypt(): Key of size 27 not supported by this algorithm. Only keys of sizes 16, 24 or 32 supported in /home/proyectoila/public_html/inc-2/encrypt.php on line 25
+[23-Apr-2018 21:14:14 UTC] PHP Parse error:  syntax error, unexpected 'Detalle' (T_STRING), expecting ']' in /home/proyectoila/public_html/comercial/reportes/detalle.php on line 15
+[23-Apr-2018 21:14:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[23-Apr-2018 21:14:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[23-Apr-2018 21:15:04 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[23-Apr-2018 21:15:04 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[23-Apr-2018 21:15:04 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[23-Apr-2018 22:02:23 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[23-Apr-2018 22:02:23 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[23-Apr-2018 22:02:23 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 13:52:21 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 13:52:21 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 13:52:21 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 14:11:02 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 14:11:02 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 14:11:02 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 14:27:19 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 14:27:19 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 14:27:19 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 14:27:54 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 14:27:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 14:27:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 14:29:21 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 14:29:21 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 14:29:21 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 14:51:50 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 14:51:50 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 14:51:50 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 14:51:54 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 14:51:54 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 14:51:54 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 14:56:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 14:56:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 14:56:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 15:06:33 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 15:06:33 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 15:06:33 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 15:39:54 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 15:39:54 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 15:39:54 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 17:27:48 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 17:27:49 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 17:27:49 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 17:40:04 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 17:40:04 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 17:40:04 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 17:42:09 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 17:42:09 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 17:42:09 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 17:57:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 17:57:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 17:57:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:00:57 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:00:57 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:00:57 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:01:59 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:01:59 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:01:59 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:03:47 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:03:47 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:03:47 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:09:01 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:09:01 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:09:01 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:13:04 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:13:04 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:13:04 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:14:52 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:14:52 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:14:52 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:15:39 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:15:39 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:15:39 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:17:28 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:17:28 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:17:28 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:18:31 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:18:31 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:18:31 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:27:36 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:27:36 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:27:36 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:34:21 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:34:21 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 18:34:21 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 19:22:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 19:22:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 19:22:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 19:25:32 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 19:25:32 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 19:25:32 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 19:25:36 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 19:25:36 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 19:25:36 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 19:49:12 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 19:49:12 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 19:49:12 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 20:07:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 20:07:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 20:07:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 20:08:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 20:08:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 20:08:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 20:46:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 20:46:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 20:46:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 20:46:27 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 20:46:27 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 20:46:27 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 20:47:57 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 20:47:57 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 20:47:57 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 21:05:39 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 21:05:39 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 21:05:39 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 21:08:09 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 21:08:09 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 21:08:09 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 21:08:13 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 21:08:13 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 21:08:13 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 21:14:38 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 21:14:38 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 21:14:38 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 21:15:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 21:15:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 21:15:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 21:17:20 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 21:17:20 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 21:17:20 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 21:20:27 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 21:20:27 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 21:20:27 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 23:01:30 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 23:01:30 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[24-Apr-2018 23:01:30 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[26-Apr-2018 17:03:24 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[26-Apr-2018 17:03:24 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111
+[26-Apr-2018 17:03:24 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/reportes/pipeline/content-index.php on line 111

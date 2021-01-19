@@ -1,0 +1,29 @@
+.company-row {
+    cursor: pointer; 
+}
+.company-row.selected {
+    background-color: #8ac38b !important;
+}
+
+#company-details .modal-body .row .label {
+    margin-top: 5px;
+}
+
+#datatable_fixed_column > tbody > tr > td {
+    padding: 6px 6px;
+    text-align: center;
+}
+
+.paginate_button.scroll-period {
+    float: left;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;    
+}
+.percentage-note {
+  font-size: 10px;
+  font-weight: 600;
+  left: 5px;
+  position: absolute;
+  top: 3px;
+}

@@ -1,0 +1,5 @@
+[02-Nov-2016 00:12:57 Europe/Moscow] PHP Warning:  addslashes() expects parameter 1 to be string, array given in /home/proyectoila/public_html/empleados/process-edit.php on line 2111
+[26-Dec-2016 18:59:05 Europe/Moscow] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/proyectoila/public_html/empleados/content-index.php on line 147
+[29-Dec-2016 03:37:42 Europe/Moscow] PHP Fatal error:  Call to a member function fetch_all_array() on a non-object in /home/proyectoila/public_html/empleados/process-insert.php on line 179
+[29-Dec-2016 03:40:25 Europe/Moscow] PHP Fatal error:  Call to a member function fetch_all_array() on a non-object in /home/proyectoila/public_html/empleados/process-insert.php on line 179
+[29-Dec-2016 03:40:49 Europe/Moscow] PHP Warning:  Invalid argument supplied for foreach() in /home/proyectoila/public_html/empleados/process-insert.php on line 196

@@ -1,0 +1,8 @@
+[04-Jan-2017 16:40:09 Europe/Moscow] PHP Warning:  Division by zero in /home/proyectoila/public_html/empresas/content-index.php on line 154
+[20-Oct-2020 18:58:58 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'proyecto_userila'@'localhost' (using password: YES) in /home/sistemam3/public_html/lib-2/config.php on line 28
+[20-Oct-2020 19:31:53 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'proyecto_userila'@'localhost' (using password: YES) in /home/sistemam3/public_html/lib-2/config.php on line 28
+[20-Oct-2020 19:31:54 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'proyecto_userila'@'localhost' (using password: YES) in /home/sistemam3/public_html/lib-2/config.php on line 28
+[20-Oct-2020 19:31:54 UTC] PHP Fatal error:  Call to a member function query() on boolean in /home/sistemam3/public_html/empresas/process-index.php on line 324
+[20-Oct-2020 20:43:04 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'proyecto_userila'@'localhost' (using password: YES) in /home/sistemam3/public_html/lib-2/config.php on line 28
+[20-Oct-2020 20:43:04 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'proyecto_userila'@'localhost' (using password: YES) in /home/sistemam3/public_html/lib-2/config.php on line 28
+[20-Oct-2020 20:43:04 UTC] PHP Fatal error:  Call to a member function query() on boolean in /home/sistemam3/public_html/empresas/process-index.php on line 324

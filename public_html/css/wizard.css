@@ -1,0 +1,6 @@
+.bootstrapWizard li {
+    width: 10% !important;
+}
+.widget-footer.smart-form > form{
+	display:inline;
+}

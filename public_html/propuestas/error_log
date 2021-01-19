@@ -1,0 +1,2 @@
+[29-Dec-2016 16:55:11 Europe/Moscow] PHP Warning:  require_once(../../lib-2/config.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/proyectoila/public_html/inc-2/init.php on line 7
+[29-Dec-2016 16:55:11 Europe/Moscow] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../../lib-2/config.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/proyectoila/public_html/inc-2/init.php on line 7

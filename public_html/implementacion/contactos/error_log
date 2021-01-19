@@ -1,0 +1,1 @@
+[28-Oct-2020 17:08:19 UTC] PHP Warning:  mcrypt_encrypt(): Key of size 27 not supported by this algorithm. Only keys of sizes 16, 24 or 32 supported in /home/sistemam3/public_html/inc-2/encrypt.php on line 25

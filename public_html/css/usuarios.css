@@ -1,0 +1,22 @@
+.user-row {
+    cursor: pointer; 
+}
+.user-row.selected {
+    background-color: #8ac38b !important;
+}
+
+#user-details .modal-body .row .label {
+    margin-top: 5px;
+}
+
+#datatable_fixed_column > tbody > tr > td {
+    padding: 6px 6px;
+    text-align: center;
+}
+
+.paginate_button.scroll-period {
+    float: left;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;    
+}

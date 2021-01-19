@@ -1,0 +1,2 @@
+[12-Mar-2019 15:03:06 UTC] PHP Warning:  mcrypt_encrypt(): Key of size 27 not supported by this algorithm. Only keys of sizes 16, 24 or 32 supported in /home/proyectoila/public_html/inc-2/encrypt.php on line 25
+[12-Mar-2019 15:03:06 UTC] PHP Warning:  mcrypt_encrypt(): Key of size 27 not supported by this algorithm. Only keys of sizes 16, 24 or 32 supported in /home/proyectoila/public_html/inc-2/encrypt.php on line 25
