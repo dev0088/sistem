@@ -65,153 +65,155 @@
 							<div class="widget-body">
 		
 								<div class="row">
-							<?php 
+								<?php 
                                 if ($currStepId == 11) 
 								{ 
 									unset($_SESSION["logged_in"]["temp"]);
-                            ?>
+            	                ?>
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
                                         <div class="alert alert-success fade in">
                                             Formar added successfully!
                                         </div>
                                     </div>
-							<?php 
+								<?php 
 								} 
 								else 
 								{ 
 								  //  print_r("hh");die; 
-							?>
+								?>
 									<form  role="form" id="formar-form" onclick="" method="POST" action="formar.php" enctype="multipart/form-data">
-										<div id="bootstrap-wizard-1" class="col-sm-12">
-											
+										<div id="bootstrap-wizard-1" class="col-sm-12">											
 											<div class="tab-content">
-									    <div class="container">
-<!-- <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-	<div class="<?= (($fieldData['error'] != '') ? "form-group has-error" : "form-group"); ?>">
-		<div class="input-group">
-			<span class="input-group-addon"><i class="fa fa-user fa-sm fa-fw"></i></span>
-			<input type="text" class="form-control input-sm" placeholder="Customer" title="<?= $fieldData['customer'] ?>" name="customer" id="customer" value=""/>
-		</div>
-		<span class="help-block"><?= $fieldData['error'] ?></span>
-	</div>
-</div> -->
-			<div class="row">
-<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-<!-- <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> -->
-	<div class="<?= (($fieldData['error'] != '') ? "form-group has-error" : "form-group"); ?>">
-		 <div class="form-group">
-                                <select class="form-control" id="customer-dropdown" name="customer">
-                                    <option value="">-Cliente-</option>
-                                    <?php
-                                        $result = mysqli_query($conn,"SELECT * FROM clientes ");
-                                        while($row = mysqli_fetch_array($result)) {
-                                    ?>
-                                        <option value="<?php echo $row['id'];?>"<?php if(isset($_POST['customer'])){ if($_POST['customer']==$row['id']){ echo 'selected'; }}?>><?php echo $row["nombre"];?></option>
-                                    <?php
-                                        }
-                                    ?>
-                                </select>		<span class="help-block"><?= $fieldData['error'] ?></span>
+											    <div class="container">
 
-                            </div>
-		<span class="help-block"><?= $fieldData['error'] ?></span>
-	</div>
-</div>
-<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-	<div class="<?= (($fieldData['error'] != '') ? "form-group has-error" : "form-group"); ?>">
-		<div class="input-group">
-			<span class="input-group-addon"><i class="fa fa-user fa-sm fa-fw"></i></span>
-			<input type="text" class="form-control input-sm" placeholder="CRS Number" title="<?= $fieldData['title'] ?>" name="crsno" id="crsno" value="<?php if(isset($_POST['crsno'])){ echo $_POST['crsno']; }?>"/>
-		</div>
-		<span class="help-block"><?= $fieldData['error'] ?></span>
-	</div>
-</div>
-</div>
+													<div class="row">
+														<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 
-			<div class="row">
-<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-	<div class="<?= (($fieldData['error'] != '') ? "form-group has-error" : "form-group"); ?>">
-		 <div class="form-group">
-                                <select class="form-control" id="category-dropdown" name="category">
-                                    <option value="">Select Category</option>
-                                    <?php
-                                        $result = mysqli_query($conn,"SELECT * FROM categories ");
-                                        while($row = mysqli_fetch_array($result)) {
-                                    ?>
-                                        <option value="<?php echo $row['id'];?>"><?php echo $row["name"];?></option>
-                                    <?php
-                                        }
-                                    ?>
-                                </select>		<span class="help-block"><?= $fieldData['error'] ?></span>
+															<div class="<?= (($fieldData['error'] != '') ? "form-group has-error" : "form-group"); ?>">
+																 <div class="form-group">
+									                                <select class="form-control" id="customer-dropdown" name="customer">
+									                                    <option value="">-Cliente-</option>
+									                                    <?php
+									                                        $result = mysqli_query($conn,"SELECT * FROM clientes ");
+									                                        while($row = mysqli_fetch_array($result)) {
+									                                    ?>
+									                                        <option value="<?php echo $row['id'];?>"<?php if(isset($_POST['customer'])){ if($_POST['customer']==$row['id']){ echo 'selected'; }}?>><?php echo $row["nombre"];?></option>
+									                                    <?php
+									                                        }
+									                                    ?>
+									                                </select>		<span class="help-block"><?= $fieldData['error'] ?></span>
 
-                            </div>
-		<span class="help-block"><?= $fieldData['error'] ?></span>
-	</div>
-</div>
-<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-	<div class="<?= (($fieldData['error'] != '') ? "form-group has-error" : "form-group"); ?>">
-	 
-                            <div class="form-group">
-                                <select class="form-control" id="sub-category-dropdown" name="subcategory">
-                                    <option value="">Select Sub Category</option>
-                                </select>		<span class="help-block"><?= $fieldData['error'] ?></span>
+									                            </div>
+																<span class="help-block"><?= $fieldData['error'] ?></span>
+															</div>
+														</div>
+														<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+															<div class="<?= (($fieldData['error'] != '') ? "form-group has-error" : "form-group"); ?>">
+																<div class="input-group">
+																	<span class="input-group-addon"><i class="fa fa-user fa-sm fa-fw"></i></span>
+																	<input type="text" class="form-control input-sm" placeholder="CRS Number" title="<?= $fieldData['title'] ?>" name="crsno" id="crsno" value="<?php if(isset($_POST['crsno'])){ echo $_POST['crsno']; }?>"/>
+																</div>
+																<span class="help-block"><?= $fieldData['error'] ?></span>
+															</div>
+														</div>
+													</div>
 
-                            </div>
-		<span class="help-block"><?= $fieldData['error'] ?></span>
-	</div>
-</div>
-</div>
+													<div class="row">
+														<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+															<div class="<?= (($fieldData['error'] != '') ? "form-group has-error" : "form-group"); ?>">
+																 <div class="form-group">
+									                                <select class="form-control" id="category-dropdown" name="category">
+									                                    <option value="">Select Category</option>
+									                                    <?php
+									                                        $result = mysqli_query($conn,"SELECT * FROM categories ");
+									                                        while($row = mysqli_fetch_array($result)) {
+									                                    ?>
+									                                        <option value="<?php echo $row['id'];?>"><?php echo $row["name"];?></option>
+									                                    <?php
+									                                        }
+									                                    ?>
+									                                </select>		<span class="help-block"><?= $fieldData['error'] ?></span>
+
+									                            </div>
+																<span class="help-block"><?= $fieldData['error'] ?></span>
+															</div>
+														</div>
+														<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+															<div class="<?= (($fieldData['error'] != '') ? "form-group has-error" : "form-group"); ?>">
+															 
+									                            <div class="form-group">
+									                                <select class="form-control" id="sub-category-dropdown" name="subcategory">
+									                                    <option value="">Select Sub Category</option>
+									                                </select>		<span class="help-block"><?= $fieldData['error'] ?></span>
+
+									                            </div>
+																<span class="help-block"><?= $fieldData['error'] ?></span>
+															</div>
+														</div>
+													</div>
  
-			<div class="row">
-<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="peoplediv">
-	<div class="<?= (($fieldData['error'] != '') ? "form-group has-error" : "form-group"); ?>">
-		<div class="input-group">
-			<span class="input-group-addon"><i class="fa fa-user fa-sm fa-fw"></i></span>
-			<input type="text" class="form-control input-sm" placeholder="Number of people" title="<?= $fieldData['title'] ?>" name="people" id="people" value=""/>
-		</div>
-		<span class="help-block"><?= $fieldData['error'] ?></span>
-	</div>
-</div>
+													<div class="row">
+														<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="peoplediv">
+															<div class="<?= (($fieldData['error'] != '') ? "form-group has-error" : "form-group"); ?>">
+																<div class="input-group">
+																	<span class="input-group-addon"><i class="fa fa-user fa-sm fa-fw"></i></span>
+																	<input type="text" class="form-control input-sm" placeholder="Number of people" title="<?= $fieldData['title'] ?>" name="people" id="people" value=""/>
+																</div>
+																<span class="help-block"><?= $fieldData['error'] ?></span>
+															</div>
+														</div>
 
-<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="quantitydiv" style="display:none;">
-	<div class="<?= (($fieldData['error'] != '') ? "form-group has-error" : "form-group"); ?>">
-		<div class="input-group">
-			<span class="input-group-addon"><i class="fa fa-user fa-sm fa-fw"></i></span>
-			<input  type="text" class="form-control input-sm" placeholder="Number of quantity" title="<?= $fieldData['title'] ?>" name="quantity" id="quantity" value=""/>
-		</div>
-		<span class="help-block"><?= $fieldData['error'] ?></span>
-	</div>
-</div>
-</div>
-			<div class="row">
-<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id="hoursdiv">
-	<div class="<?= (($fieldData['error'] != '') ? "form-group has-error" : "form-group"); ?>">
-		<div class="input-group">
-			<span class="input-group-addon"><i class="fa fa-user fa-sm fa-fw"></i></span>
-			<input type="text" class="form-control input-sm" placeholder="Number of hours" title="Number of hours" name="hours" id="hours" value=""/>
-		</div>
-		<span class="help-block"><?= $fieldData['error'] ?></span>
-	</div>
-</div>
-<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-	<div class="<?= (($fieldData['error'] != '') ? "form-group has-error" : "form-group"); ?>">
-		<div class="input-group" id="price" >
-		</div>
-		<span class="help-block"><?= $fieldData['error'] ?></span>
-	</div>
-</div>
-</div>
-			<div class="row">
-<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-	<div class="<?= (($fieldData['error'] != '') ? "form-group has-error" : "form-group"); ?>">
-		<div class="input-group">
-			<span class="input-group-addon"><i class="fa fa-user fa-sm fa-fw"></i></span>
-			<input type="text" class="form-control input-sm" placeholder="Total" title="Total" name="total" id="total" defaultValue =""/>
-		</div>
-		<span class="help-block"><?= $fieldData['error'] ?></span>
-	</div>
-</div>
-</div>
-</div>
+														<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="quantitydiv" style="display:none;">
+															<div class="<?= (($fieldData['error'] != '') ? "form-group has-error" : "form-group"); ?>">
+																<div class="input-group">
+																	<span class="input-group-addon"><i class="fa fa-user fa-sm fa-fw"></i></span>
+																	<input  type="text" class="form-control input-sm" placeholder="Number of quantity" title="<?= $fieldData['title'] ?>" name="quantity" id="quantity" value=""/>
+																</div>
+																<span class="help-block"><?= $fieldData['error'] ?></span>
+															</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id="hoursdiv">
+															<div class="<?= (($fieldData['error'] != '') ? "form-group has-error" : "form-group"); ?>">
+																<div class="input-group">
+																	<span class="input-group-addon"><i class="fa fa-user fa-sm fa-fw"></i></span>
+																	<input type="text" class="form-control input-sm" placeholder="Number of hours" title="Number of hours" name="hours" id="hours" value=""/>
+																</div>
+																<span class="help-block"><?= $fieldData['error'] ?></span>
+															</div>
+														</div>
+														<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+															<div class="<?= (($fieldData['error'] != '') ? "form-group has-error" : "form-group"); ?>">
+																<div class="input-group" id="price" >
+																</div>
+																<span class="help-block"><?= $fieldData['error'] ?></span>
+															</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id="totaldiv">
+															<div class="<?= (($fieldData['error'] != '') ? "form-group has-error" : "form-group"); ?>">
+																<div class="input-group">
+																	<span class="input-group-addon"><i class="fa fa-user fa-sm fa-fw"></i></span>
+																	<input type="text" class="form-control input-sm" placeholder="Total" title="Total" name="total" id="total" defaultValue =""/>
+																</div>
+																<span class="help-block"><?= $fieldData['error'] ?></span>
+															</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="descriptiondiv">
+															<div class="<?= (($fieldData['error'] != '') ? "form-group has-error" : "form-group"); ?>">
+																<div class="input-group">
+																	<span class="input-group-addon"><i class="fa fa-user fa-sm fa-fw"></i></span>
+																	<input type="label" class="form-control input-sm" placeholder="Description" title="Description" name="description" id="description" defaultValue =""/>
+																</div>
+																<span class="help-block"><?= $fieldData['error'] ?></span>
+															</div>
+														</div>
+													</div>
+												</div>
 
                                             <?php 
 												 
@@ -246,8 +248,8 @@
 			</div>
 		</div>
 		<?php if(isset($_POST['customer'])){?>
-		 <script>
-		 get_data($('#customer-dropdown').val(), $('#crsno').val());
+		<script>
+		get_data($('#customer-dropdown').val(), $('#crsno').val());
         $('#customer-dropdown').on('change', function() {
             var customer_id = this.value;
             var crsno = $('#crsno').val();
@@ -279,14 +281,18 @@
     		});
     	}
     	</script>
-    	<?}?>
-		 <script>
-
-    
+    	<?php } ?>
+	<script>
     $(document).ready(function() {
-        
+        $("#totaldiv").hide();
+        $("#hoursdiv").hide();
+        $("#peoplediv").hide();
+        $("#descriptiondiv").hide();
         $('#category-dropdown').on('change', function() {
             var category_id = this.value;
+            $("#descriptiondiv").show();
+            // alert(category_id);
+            $("#totaldiv").show();
             if (category_id == 6) {
             	$("#peoplediv").hide();
             	$("#hoursdiv").hide();
@@ -323,7 +329,6 @@
      $(document).ready(function() {
         $('#sub-category-dropdown').on('change', function() {
             var category_id = this.value;
-          //  alert(category_id);
             $.ajax({
                 url: "get-subcat-price.php",
                 type: "POST",
@@ -364,7 +369,7 @@
         }
     });
     $('input[type="text"][name=total]').val((x == 0) ?0:result);
-}); });
+	}); });
     </script>
 
 

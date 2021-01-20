@@ -45,7 +45,7 @@ require_once("../../inc-2/gump.class.php");
 require_once("../../inc-2/encrypt.php"); 
 require("../../inc-2/Zebra_Pagination.php");
 
-require("../../inc-2/fpdf.php");
+require_once("../../inc-2/fpdf.php");
 require("../../inc-2/htmlparser.inc.php");
 require("../../inc-2/WriteHTML.php");
 

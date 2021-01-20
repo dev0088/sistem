@@ -115,14 +115,17 @@
 		
 		<!-- *** Contenido de la tabla -->
 							        <tbody>
-                                <?php if ( $arrEmployeesData ) { ?>
-                                    <?php foreach( $arrEmployeesData as $objEmployeeData ) { ?>
+                                <?php if ( $arrEmployeesData ) {
+                                $auto_id = 0; ?>
+                                    <?php foreach( $arrEmployeesData as $objEmployeeData ) { 
+                                    	$auto_id++; ?>
                                         <tr class="employee-row" 
                                             data-row='<?= JSON_Encode($objEmployeeData) ?>'
                                             data-employee-id="<?= $objEmployeeData['id'] ?>">
                                             
-                                            <td><?= $objEmployeeData['id'] ?></td>
-                                          <td><?= $objEmployeeData['nombre'] ?></td>
+                                            <!-- <td><?= $objEmployeeData['id'] ?></td> -->
+                                            <td><?= $auto_id ?></td>
+                                          	<td><?= $objEmployeeData['nombre'] ?></td>
                                             <td><?= $objEmployeeData['crsno'] ?></td>
                                             <td><?= number_format($objEmployeeData['pmtot_cost'],2) ?></td>
                                             <!--<td><button type="button" class="btn btn-success btn-sm update" data-toggle="modal" data-keyboard="false" data-backdrop="static" data-target="#update_country"

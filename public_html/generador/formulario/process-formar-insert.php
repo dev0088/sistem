@@ -110,6 +110,9 @@
 		
 		$price 	= $_POST['price'];
 		$total 	= $_POST['total'];	
+
+		$description = $_POST['description'];
+
         if (!empty($_POST["people"])){
 		    $qtypeople 	= $_POST['people'];
 		    $hours 	= $_POST['hours'];
@@ -135,7 +138,7 @@
 		}
         else{
 	
-	$query 		= "INSERT INTO `labor`( `id_customer`,`crsno`, `category`, `subcategory`, `pmc_quantity_of_people`, `pmc_hours`, `pmc_cost`, `pmtot_cost`) VALUES ('$customer','$crsno','$category','$subcategory','$qtypeople','$hours','$price','$total') ";
+		$query 		= "INSERT INTO `labor`( `id_customer`,`crsno`, `category`, `subcategory`, `pmc_quantity_of_people`, `pmc_hours`, `pmc_cost`, `pmtot_cost`, `description`) VALUES ('$customer','$crsno','$category','$subcategory','$qtypeople','$hours','$price','$total', '$description') ";
 		$queryRes 	= $conn->query($query);
 		if ($queryRes) 
 		{			
@@ -151,6 +154,4 @@
         }
 	
 	}
-	
-	
 	
