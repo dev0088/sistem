@@ -115,10 +115,15 @@
 		
 		<!-- *** Contenido de la tabla -->
 							        <tbody>
+							    <?php if ( $arrEmployeesData ) {
+                                	$auto_id = 0; }?>
+                                    <?php foreach( $arrEmployeesData as $objEmployeeData ) {
+                                    	$auto_id ++;
+                                    }	?>
                                 <?php if ( $arrEmployeesData ) {
-                                $auto_id = 0; ?>
+                                	// $auto_id = count($arrEmployeesData); ?>
                                     <?php foreach( $arrEmployeesData as $objEmployeeData ) { 
-                                    	$auto_id++; ?>
+                                    	?>
                                         <tr class="employee-row" 
                                             data-row='<?= JSON_Encode($objEmployeeData) ?>'
                                             data-employee-id="<?= $objEmployeeData['id'] ?>">
@@ -145,7 +150,7 @@
                                             
                                      
                                         </tr>
-                                    <?php } ?>
+                                    <?php $auto_id--; } ?>
                                 <?php } ?>
 							        </tbody>
 							

@@ -63,8 +63,8 @@
                 $first = $height+2;
                 $second = $height+$height+$height+3;
                 $len = strlen($t);
-                if($len>25){
-                    $txt = str_split($t,25);
+                if($len>40){
+                    $txt = str_split($t,40);
                     $this->SetX($x);
                     $this->Cell($w,$first,$txt[0],0,0,'C');
                     $this->SetX($x);
@@ -85,22 +85,30 @@
             function ImprovedTable($header, $data)
             {
                 // Column widths
-                $w = array(55, 55, 60, 20, 20, 30, 35);
+                $w = array(80, 0.01, 90, 20, 20, 30, 35);
                 // Header
                 for($i=0;$i<count($header);$i++)
-                    $this->Cell($w[$i],12,$header[$i],1,0,'C');
+                    $this->Cell($w[$i],16,$header[$i],1,0,'C');
                 $this->Ln();
                 // Data
                 
                 foreach($data as $row)
                 {
                     $j=0;
+                    $des='';
                     foreach($row as $col){
                         $x = $this->GetX($x);
-                        if (($j==5) || ($j==6)){
-                            $col = '$'.number_format($col, 2);
+                        if($j == 1){
+                            $des = $col;
+                        } else {
+                            if (($j==5) || ($j==6)){
+                                $col = '$'.number_format($col, 2);
+                            }
+                            if (($j == 2) && ($des!='')){
+                                $col = $col.' - '.$des;
+                            }
+                            $this->myCell($w[$j],16,$x,$col,$j);
                         }
-                        $this->myCell($w[$j],12,$x,$col,$j);
                         // $this->Cell($w[$j],12,$col,1,0,'C');
                         $j++;
                     }
@@ -164,7 +172,7 @@
 // l.subcategory = s.id
 // where l.id = $id
 // ;");
-        $empRes     = $conn->query("select name, subcategory_name, description, pmc_quantity_of_people, pmc_hours, pmc_cost, pmtot_cost from categories c 
+        $empRes     = $conn->query("select name, description, subcategory_name, pmc_quantity_of_people, pmc_hours, pmc_cost, pmtot_cost from categories c 
 inner join subcategories s on c.id = s.Categories 
 inner join labor l on l.subcategory = s.id
 where l.id_customer = $id and l.crsno = $crs;");
@@ -187,9 +195,10 @@ where l.id_customer = $id and l.crsno = $crs;");
 // print_r($empcrs['crsno']);die();
         
     //  print_r($empRow);
+
         $pdf = new PDF("L", "mm", "A4");
         // Column headings
-        $header = array('Category', 'Sub-category', 'Description', 'Quantity', 'Hours', 'Price', 'Subtotal');
+        $header = array('Category', '', 'Sub-category', 'Quantity', 'Hours', 'Price', 'Subtotal');
         $pdf->SetFont('Arial','',10);
         $pdf->AliasNbPages();
         $pdf->AddPage();
@@ -197,9 +206,9 @@ where l.id_customer = $id and l.crsno = $crs;");
         $pdf->SetFont('Arial','',11);
         $pdf->ImprovedTable($header,$empRes);
         $pdf->Ln();
-        $pdf->Cell(210,12,"",1,0,'R',false);
-        $pdf->Cell(30,12,"TOTAL",1,0,'C',false);
-        $pdf->Cell(35,12, '$'.number_format($empRow1['alltotal'], 2).'   ',1,0,'R',false);
+        $pdf->Cell(210,16,"",1,0,'R',false);
+        $pdf->Cell(30,16,"TOTAL",1,0,'C',false);
+        $pdf->Cell(35,16, '$'.number_format($empRow1['alltotal'], 2).'   ',1,0,'R',false);
         $pdf->Ln();
         ob_end_clean();
         $pdf->Output();

@@ -186,6 +186,7 @@
 														<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 															<div class="<?= (($fieldData['error'] != '') ? "form-group has-error" : "form-group"); ?>">
 																<div class="input-group" id="price" >
+
 																</div>
 																<span class="help-block"><?= $fieldData['error'] ?></span>
 															</div>
@@ -318,8 +319,7 @@
                 cache: false,
                 success: function(result){
                     $("#sub-category-dropdown").html(result);
-                    // $("#price").html(result);
-
+                    $("#price").html('<span class="input-group-addon"><i class="fa fa-user fa-sm fa-fw"></i></span><input type="text" class="form-control input-lm" placeholder="Price" />');
                 }
             });
         });
@@ -337,9 +337,8 @@
                 },
                 cache: false,
                 success: function(result){
-                   // $("#sub-category-dropdown").html(result);
-                     $("#price").html(result);
-
+                    // $("#sub-category-dropdown").html(result);
+                    $("#price").html(result);
                 }
             });
         });

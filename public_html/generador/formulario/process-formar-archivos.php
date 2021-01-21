@@ -188,8 +188,8 @@ inner join clientes u on u.id = l.id_customer
      } 
 	else 
 	{
-        // $companiesDataQ .= " ORDER BY l.id  DESC ";
-    $companiesDataQ .= " ORDER BY l.id  ASC ";
+    $companiesDataQ .= " ORDER BY l.id  DESC ";
+    // $companiesDataQ .= " ORDER BY l.id  ASC ";
   }
 	$records_per_page 	= 10;	
 	$pagination 		= new Zebra_Pagination();	
