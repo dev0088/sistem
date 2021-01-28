@@ -25,7 +25,7 @@
         $crs = $_GET['crsno'];
 // echo "string";die();
     $arrEmployeesData   = array();
-$companiesDataQ         =   "select l.id, name, subcategory_name, pmc_quantity_of_people, crsno, pmc_hours, pmc_cost, pmtot_cost, created_at from categories c 
+$companiesDataQ         =   "select l.id, name, subcategory_name, description, pmc_quantity_of_people, crsno, pmc_hours, pmc_cost, pmtot_cost, created_at from categories c 
 inner join subcategories s on c.id = s.Categories 
 inner join labor l on l.subcategory = s.id
 where l.id_customer = $id and l.crsno = $crs;";    
@@ -164,7 +164,7 @@ where l.id_customer = $id and l.crsno = $crs;";
                                             data-employee-id="<?= $objEmployeeData['id'] ?>">
                                             
                                             <td><?= $objEmployeeData['name'] ?></td>
-                                          <td><?= $objEmployeeData['subcategory_name'] ?></td>
+                                          <td><?= $objEmployeeData['subcategory_name'].' - '.$objEmployeeData['description'] ?></td>
                                             <td><?= $objEmployeeData['pmc_quantity_of_people'] ?></td>
                                             <td><?= $objEmployeeData['pmc_hours'] ?></td>
                                             <td><?= number_format($objEmployeeData['pmc_cost'],2) ?></td>
