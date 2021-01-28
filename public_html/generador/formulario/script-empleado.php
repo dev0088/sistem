@@ -252,7 +252,6 @@ if($currStepId == 1)
 			$(".eqp_mnt").attr("disabled", false);
 			$(".eqp_wk").attr("disabled", false);
 
-
 		}
 
 

@@ -157,7 +157,7 @@
 															<div class="<?= (($fieldData['error'] != '') ? "form-group has-error" : "form-group"); ?>">
 																<div class="input-group">
 																	<span class="input-group-addon"><i class="fa fa-user fa-sm fa-fw"></i></span>
-																	<input type="text" class="form-control input-sm" placeholder="Number of people" title="<?= $fieldData['title'] ?>" name="people" id="people" value=""/>
+																	<input type="text" class="form-control input-sm" placeholder="Number of people / Quantity" title="<?= $fieldData['title'] ?>" name="people" id="people" value=""/>
 																</div>
 																<span class="help-block"><?= $fieldData['error'] ?></span>
 															</div>
@@ -214,6 +214,23 @@
 															</div>
 														</div>
 													</div>
+													
+													
+													
+													<div class="row">
+														<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="markupdiv">
+															<div class="<?= (($fieldData['error'] != '') ? "form-group has-error" : "form-group"); ?>">
+																<div class="input-group">
+																	<span class="input-group-addon"><i class="fa fa-user fa-sm fa-fw"></i></span>
+																	<input type="label" class="form-control input-sm" placeholder="MarkUp" title="MarkUp" name="mnarkup" id="mnarkup" defaultValue ="" />
+																</div>
+																<span class="help-block"><?= $fieldData['error'] ?></span>
+															</div>
+														</div>
+													</div>
+													
+													
+													
 												</div>
 
                                             <?php 
@@ -281,6 +298,35 @@
     			
     		});
     	}
+    	
+    	
+    function deleterow(customer_id, crsno, hide_row){
+if (confirm('Are you sure you want to delete this category?')) {
+    	    $.ajax({
+    			url: "get_crss.php",
+    			type: "POST",
+    			cache: false,
+    			data:{
+    				customer_id:customer_id, crsno:crsno, rowid:hide_row
+    			},
+    			success: function(dataResult){
+    				var dataResult = JSON.parse(dataResult);
+    				console.log(dataResult.html);
+    				if(dataResult.html!=''){
+    					$('.customer_data').html(dataResult.html);
+    				// 	$('#crsno').val(dataResult.crs_no);
+    				// 	$('#crsno').attr('readonly', 'readonly');
+    				}else{
+    				    $('.customer_data').html('');
+    				    // $('#crsno').val('');
+    				    // $('#crsno').removeAttr('readonly');
+    				}
+    			}
+    			
+    		});
+    	}
+    }
+    	
     	</script>
     	<?php } ?>
 	<script>
@@ -289,8 +335,10 @@
         $("#hoursdiv").hide();
         $("#peoplediv").hide();
         $("#descriptiondiv").hide();
+        $("#markupdiv").hide();
         $('#category-dropdown').on('change', function() {
             var category_id = this.value;
+            $("#markupdiv").show();
             $("#descriptiondiv").show();
             // alert(category_id);
             $("#totaldiv").show();
@@ -344,6 +392,70 @@
         });
     });
     
+    
+    
+    
+     $(document).ready(function() {
+        $('#mnarkup').on('change', function() {
+            
+             //var aaaaa = parseInt(this.value);
+           var aaaaa =  $("input[name=mnarkup]").val();
+             
+     if(aaaaa == '' || aaaaa == null){
+          var aaaa = 0;
+     }else{
+         var aaaa = parseInt(this.value);
+     }
+        
+            var result = 1;
+    var x=0;
+    $('input[type="text"]').not('input[type="text"][name=total], input[type="text"][name=crsno]').each(function () {
+        if (this.value != '') {
+            result *= this.value ;
+            x++;
+        }
+    });
+    
+    
+    
+    
+    var percent = ((result/100)*aaaa) ;
+   
+    $('input[type="text"][name=total]').val((x == 0) ?0:parseFloat(result)+parseFloat(percent) );
+    
+        
+        
+        });
+    });
+    
+    
+    //  $(document).ready(function() {
+    //     $('#people').on('change', function() {
+      
+    //       var a =  parseInt($("#mnarkup").val());
+    //       var b = parseInt($("#total").val());
+        
+    //     var aaaa = a+b ;
+    //     $('#mytotal').val(aaaa);
+
+    //     });
+    // });
+    
+    
+    
+    //  $(document).ready(function() {
+    //     $('#hours').on('change', function() {
+      
+    //       var a =  parseInt($("#mnarkup").val());
+    //       var b = parseInt($("#total").val());
+        
+    //     var aaaa = a+b ;
+    //     $('#mytotal').val(aaaa);
+
+    //     });
+    // });
+    
+    
 //     $(document).ready(function(){
 //     $('#category-dropdown').on('change', function() {
 //       if ( this.value == '6')
@@ -359,6 +471,16 @@
 
          $(document).ready(function() {
              $(document).on("keyup","input[type='text']",function() {
+                 
+                 
+       var bbbbb  = $("input[name=mnarkup]").val();;
+             
+     if(bbbbb == '' || bbbbb== null){
+          var bbbb = 0;
+     }else{
+         var bbbb = parseInt(this.value);
+     }
+                 
     var result = 1;
     var x=0;
     $('input[type="text"]').not('input[type="text"][name=total], input[type="text"][name=crsno]').each(function () {
@@ -367,7 +489,14 @@
             x++;
         }
     });
-    $('input[type="text"][name=total]').val((x == 0) ?0:result);
+    
+    
+    var percent = ((result/100)*bbbb) ;
+   
+   
+   
+    $('input[type="text"][name=total]').val((x == 0) ?0:parseFloat(result)+parseFloat(percent));
+    
 	}); });
     </script>
 

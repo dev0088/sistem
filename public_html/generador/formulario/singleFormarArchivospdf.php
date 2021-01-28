@@ -11,16 +11,21 @@
         // include_once("../../pdf/fpdf.php");
         class PDF extends FPDF
         {
-            function Header($data, $no, $id)
+            function Header($data, $no, $id, $headern)
             {
-                $this->SetFont('Arial','B',15);
+                $this->SetFont('Arial','B',12);
                 if($data!=''){
-                    $this->Cell(190,10,'Generador ID: '.$id,0,1);
-                    $this->Cell(190,10,'Client Name: '.$data,0,1);
-                    $this->Cell(190,10,'CRS No: '.$no,0,1);
+                    $this->Cell(190,7,'Generador ID: '.$id,0,1);
+                    $this->Cell(190,7,'Client Name: '.$data,0,1);
+                    $this->Cell(190,7,'CRS No: '.$no,0,1);
+                    
                 }
-                $this->Ln();
+               /// $this->Ln();
+                
+                
             }
+            
+            
 
             function Footer()
             {
@@ -58,6 +63,8 @@
                     $this->Ln();
                 }
             }
+            
+            
             function myCell($w, $h, $x, $t, $price_item){
                 $height = $h/2;
                 $first = $height+2;
@@ -85,10 +92,10 @@
             function ImprovedTable($header, $data)
             {
                 // Column widths
-                $w = array(80, 0.01, 90, 20, 20, 30, 35);
+                $w = array(70, 0.01, 100, 20, 20, 30, 35);
                 // Header
                 for($i=0;$i<count($header);$i++)
-                    $this->Cell($w[$i],16,$header[$i],1,0,'C');
+                    $this->Cell($w[$i],10,$header[$i],1,0,'C');
                 $this->Ln();
                 // Data
                 
@@ -107,7 +114,7 @@
                             if (($j == 2) && ($des!='')){
                                 $col = $col.' - '.$des;
                             }
-                            $this->myCell($w[$j],16,$x,$col,$j);
+                            $this->myCell($w[$j],10,$x,$col,$j);
                         }
                         // $this->Cell($w[$j],12,$col,1,0,'C');
                         $j++;
@@ -158,9 +165,12 @@
                 $this->Cell(array_sum($w),0,'','T');
             }
         }
+        
+           
 
         $id = $_GET['id'];
         $crs = $_GET['crsno'];
+
 
 
         //include("process-index.php");
@@ -172,6 +182,28 @@
 // l.subcategory = s.id
 // where l.id = $id
 // ;");
+$headern = $conn->query("SELECT `category`,SUM(`pmtot_cost`)
+FROM `labor`     
+where id_customer = $id and crsno = $crs
+GROUP BY `category` ;");
+
+//	$resultdata =  $headern->fetch_row();
+	
+// 	while ($row = $headern -> fetch_row()) {
+// //printf ("%s (%s)\n", $row[0], $row[1]);
+//   $this->Cell(190,7,'CRS No: '.$row[0],0,1);
+//   $this->Cell(190,7,'CRS No: '.$row[1],0,1);
+// }
+// 	foreach($resultdata as $values){
+// 	    echo $values.category;
+// 	    echo '<br>';
+	    
+// 	}
+	
+	//die();
+	
+
+
         $empRes     = $conn->query("select name, description, subcategory_name, pmc_quantity_of_people, pmc_hours, pmc_cost, pmtot_cost from categories c 
 inner join subcategories s on c.id = s.Categories 
 inner join labor l on l.subcategory = s.id
@@ -180,6 +212,19 @@ where l.id_customer = $id and l.crsno = $crs;");
         $empName1     = $empName->fetch_assoc();
         $empRes1     = $conn->query("SELECT SUM(pmtot_cost) as alltotal from labor where id_customer = $id and crsno = $crs");
         $empRow1     = $empRes1->fetch_assoc();
+        
+        
+        $empRes2     = $conn->query("SELECT SUM(pmtot_cost) as own_sub_total from labor where id_customer = $id and crsno = $crs and (category='1' or category='2') ");
+        $empRow2     = $empRes2->fetch_assoc();
+        $Toolstotal = (($empRow2['own_sub_total']/100)*5);
+        
+        
+        $empRes3    = $conn->query("SELECT SUM(pmtot_cost) as own_sub_total from labor where id_customer = $id and crsno = $crs and (category='1' or category='2') ");
+        $empRow3     = $empRes3->fetch_assoc();
+        $Consumablestotal = (($empRow3['own_sub_total']/100)*2);
+        
+        
+        
         $header     = $conn->query("SELECT colmns from labor where field =='pmc_quantity_of_people' and field =='pmc_hours'");
         $empRow     = $empRes->fetch_assoc();
         $empCRS     = $conn->query("select l.id, name, crsno from categories c 
@@ -202,13 +247,60 @@ where l.id_customer = $id and l.crsno = $crs;");
         $pdf->SetFont('Arial','',10);
         $pdf->AliasNbPages();
         $pdf->AddPage();
-        $pdf->Header($empName1['nombre'], $empcrs['crsno'], $empcrs['id']);
-        $pdf->SetFont('Arial','',11);
+        
+        $pdf->Header($empName1['nombre'], $empcrs['crsno'], $empcrs['id'], $headern);
+         $pdf->SetFont('Arial','',11);
+         $pdf->Cell(70,7,'Category' ,1,0,'C');
+            $pdf->Cell(30,7,'Subtotal',1,1,'C');   
+            
+        	while ($row = $headern -> fetch_row()) {
+            $heade = $conn->query("SELECT `name` FROM `categories` where id = $row[0]");
+             $empcq = $heade->fetch_assoc();
+            $pdf->Cell(70,7,$empcq['name'] ,1,0,'L');
+           // $pdf->Cell(30,7,'$'.$row[1],1,1,'R');  
+           
+             $pdf->Cell(30,7,'$'.number_format($row[1], 2),1,1,'R',$fill);
+        	}
+        	
+        	 $pdf->Cell(70,7,'TOTAL' ,1,0,'L');
+            $pdf->Cell(30,7,'$'.number_format($empRow1['alltotal'], 2),1,1,'R');  
+        	
+	$pdf->Ln();
+	 $getsubtotal = ($Toolstotal)+($Consumablestotal)+($empRow1['alltotal']);
+        	 $pdf->Cell(70,7,'Tools' ,1,0,'L');
+            $pdf->Cell(30,7,'$'.number_format($Toolstotal, 2),1,1,'R');   
+        	 $pdf->Cell(70,7,'Consumables' ,1,0,'L');
+            $pdf->Cell(30,7,'$'.number_format($Consumablestotal, 2),1,1,'R');    
+        	 $pdf->Cell(70,7,'TOTAL' ,1,0,'L');
+            $pdf->Cell(30,7,'$'.number_format($getsubtotal, 2),1,1,'R');
+            
+            
+ 
+        	
+	$pdf->Ln();
+	 $getsubtotal11 = $getsubtotal*0.01;
+	 
+	 $addsubtotal = ($getsubtotal11+$getsubtotal)*0.025;
+	 
+	 
+	 $subtotalinc = $getsubtotal+$getsubtotal11+$addsubtotal;
+	 
+        	 $pdf->Cell(70,7,'Insurance' ,1,0,'L');
+            $pdf->Cell(30,7,'$'.number_format($getsubtotal11, 2),1,1,'R');   
+        	 $pdf->Cell(70,7,'Comission' ,1,0,'L');
+            $pdf->Cell(30,7,'$'.number_format($addsubtotal, 2),1,1,'R');    
+        	 $pdf->Cell(70,7,'TOTAL' ,1,0,'L');
+            $pdf->Cell(30,7,'$'.number_format($subtotalinc, 2),1,1,'R');
+                       
+            
+        	
+        	$pdf->Ln();
+       // $pdf->SetFont('Arial','',11);
         $pdf->ImprovedTable($header,$empRes);
         $pdf->Ln();
-        $pdf->Cell(210,16,"",1,0,'R',false);
-        $pdf->Cell(30,16,"TOTAL",1,0,'C',false);
-        $pdf->Cell(35,16, '$'.number_format($empRow1['alltotal'], 2).'   ',1,0,'R',false);
+        $pdf->Cell(210,10,"",1,0,'R',false);
+        $pdf->Cell(30,10,"TOTAL",1,0,'C',false);
+        $pdf->Cell(35,10, '$'.number_format($empRow1['alltotal'], 2).'   ',1,0,'R',false);
         $pdf->Ln();
         ob_end_clean();
         $pdf->Output();
